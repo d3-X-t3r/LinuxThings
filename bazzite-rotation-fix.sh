@@ -23,6 +23,9 @@ sleep 1
 #echo $(date '+%Y-%m-%d %H:%M:%S') Closing Steam... | tee -a /tmp/bazrotfix.log
 #killall -v -r '.*steam.*' 2>&1 | tee -a /tmp/bazrotfix.log
 
+# Debug: Get current outputs
+kscreen-doctor --outputs 2>&1 | tee -a /tmp/bazrotfix.log
+
 # Fix desktop orientation
 # Rotation options: right, normal, left, inverted
 echo $(date '+%Y-%m-%d %H:%M:%S') Fixing desktop orientation... | tee -a /tmp/bazrotfix.log
