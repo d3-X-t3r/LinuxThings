@@ -9,7 +9,7 @@
 sleep 1
 echo $(date '+%Y-%m-%d %H:%M:%S') Starting Bazzite Desktop Orientation Fix script...| tee -a /tmp/bazrotfix.log
 
-# This bit is needed to wait allow enough time for the desktop to load, otherwise the fix won't work
+# This bit is needed to allow enough time for the desktop to load, otherwise the fix won't work
 # Since Steam launches automatically in the Desktop mode in Bazzite-Deck, we can use it 
 # to determine whether or not the desktop has loaded.
 while ! pgrep -x "steam" > /dev/null; do
