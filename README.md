@@ -2,7 +2,7 @@
 *Just a collection of random notes and my experiences in my Linux gaming journey.*
 
 ## FIX: Steam Scaling
-Add the following line to your `/etc/environment` file: `STEAM_FORCE_DESKTOPUI_SCALING=<scale>`
+Add the following line to your `/etc/environment` file: `STEAM_FORCE_DESKTOPUI_SCALING=<scale>`   
 Example using 200% scaling: `STEAM_FORCE_DESKTOPUI_SCALING=2.0`
 
 ## NTFS
