@@ -19,16 +19,17 @@ Ref: https://bbs.archlinux.org/viewtopic.php?pid=2202200#p2202200
 3. Alternate fix: try disabling wifi and bluetooth in UEFI
 
 ## Potential Fix 2 for Systemd 256 Bug
-Ref: https://github.com/systemd/systemd/issues/33626
-Ref: https://bbs.archlinux.org/viewtopic.php?pid=2180537#p2180537
 
-1. Create a drop-in config `/etc/systemd/system/systemd-suspend.service.d/disable_freeze_user_session.conf` with the following:
+Create a drop-in config `/etc/systemd/system/systemd-suspend.service.d/disable_freeze_user_session.conf` with the following:
 
    ```
    [Service]
    Environment="SYSTEMD_SLEEP_FREEZE_USER_SESSIONS=false"
    ```
 
-More workarounds in: https://bugzilla.redhat.com/show_bug.cgi?id=2321268 
+References:
+1. https://github.com/systemd/systemd/issues/33626
+2. https://bbs.archlinux.org/viewtopic.php?pid=2180537#p2180537
+3. More workarounds: https://bugzilla.redhat.com/show_bug.cgi?id=2321268 
 
 
